@@ -522,3 +522,4 @@ SUBSYSTEM_DEF(timer)
 #undef BUCKET_POS
 #undef TIMER_MAX
 #undef TIMER_ID_MAX
+
