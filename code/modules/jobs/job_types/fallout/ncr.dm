@@ -38,8 +38,8 @@ Colonel
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	H.add_trait(H, TRAIT_TECHNOPHREAK, src)
+	H.add_trait(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/ncr/f13colonel
 	name 		= "NCR Colonel"
@@ -85,11 +85,11 @@ Captain
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	H.add_trait(H, TRAIT_TECHNOPHREAK, src)
+	H.add_trait(H, TRAIT_GENERIC, src)
+	H.add_trait(H, TRAIT_HARD_YARDS, src)
+	H.add_trait(H, TRAIT_LIFEGIVER, src)
+	H.add_trait(H, TRAIT_SELF_AWARE, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -193,8 +193,8 @@ Lieutenant
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	H.add_trait(H, TRAIT_TECHNOPHREAK, src)
+	H.add_trait(H, TRAIT_GENERIC, src)
 
 /datum/outfit/job/ncr/f13lieutenant
 	name = "NCR Lieutenant"
@@ -207,7 +207,7 @@ Lieutenant
 	glasses = 	/obj/item/clothing/glasses/sunglasses/big
 	shoes = 	/obj/item/clothing/shoes/f13/military/ncr_officer
 	gloves = 	/obj/item/clothing/gloves/f13/leather/ncr_officer
-	belt = NULL
+	belt = null
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat/survival = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
@@ -302,7 +302,7 @@ Sergeant
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	neck = 			/obj/item/storage/belt/holster
 	gloves =        /obj/item/clothing/gloves/f13/ncr
-	belt = NULL
+	belt = null
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat/survival = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
@@ -375,7 +375,7 @@ Corporal
 	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	neck = 			/obj/item/storage/belt/holster
 	accessory = /obj/item/clothing/accessory/ncr/CPL
-	belt = NULL
+	belt = null
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mm = 2,
@@ -750,11 +750,11 @@ Veteran Ranger
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	H.add_trait(H, TRAIT_TECHNOPHREAK, src)
+	H.add_trait(H, TRAIT_GENERIC, src)
+	H.add_trait(H, TRAIT_HARD_YARDS, src)
+	H.add_trait(H, TRAIT_LIFEGIVER, src)
+	H.add_trait(H, TRAIT_IRONFIST, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -820,16 +820,16 @@ Veteran Ranger
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	H.add_trait(H, TRAIT_TECHNOPHREAK, src)
+	H.add_trait(H, TRAIT_GENERIC, src)
+	H.add_trait(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/ncr/f13ranger
 	name = "NCR Ranger"
 	jobtype = /datum/job/ncr/f13ranger
 	id = 			/obj/item/card/id/dogtag/ncrranger
 	uniform =  		/obj/item/clothing/under/f13/ranger
-	belt = NULL
+	belt = null
 	gloves =		/obj/item/clothing/gloves/patrol
 	shoes =			/obj/item/clothing/shoes/laced
 	neck = 			/obj/item/storage/belt/holster
