@@ -1,3 +1,16 @@
+//Globa job defines
+
+//Defines Factions
+#define FACTION_NCR "NCR"
+#define FACTION_LEGION "Legion"
+#define FACTION_BROTHERHOOD "BOS"
+#define FACTION_OASIS "Town"
+#define FACTION_ENCLAVE "Enclave"
+#define FACTION_WASTELAND "Wastelander"
+#define FACTION_RAIDERS "Raiders"
+#define FACTION_TRIBE "Tribe"
+#define FACTION_VAULT "Vault"
+
 
 #define ENGSEC			(1<<0)
 
@@ -59,10 +72,9 @@
 #define F13TROOPER		(1<<8)
 #define F13RECRUIT		(1<<9)
 #define F13VETRANGER	(1<<10)
-#define F13RANGERPATROL	(1<<11)
-#define F13RANGERSCOUT	(1<<12)
-#define F13NCRCITIZEN	(1<<13)
-#define	F13NCRADMIN		(1<<14)
+#define F13RANGER		(1<<11)
+#define F13NCRCITIZEN	(1<<12)
+#define	F13NCRADMIN		(1<<13)
 
 #define LEGION			(1<<4)
 
@@ -186,3 +198,5 @@
 #define JOB_UNAVAILABLE_ACCOUNTAGE 4
 #define JOB_UNAVAILABLE_SLOTFULL 5
 #define JOB_UNAVAILABLE_WHITELIST 6
+
+GLOBAL_LIST_INIT(faction_list, list(FACTION_NCR, FACTION_LEGION, FACTION_BROTHERHOOD, FACTION_OASIS, FACTION_ENCLAVE, FACTION_WASTELAND, FACTION_RAIDERS))
